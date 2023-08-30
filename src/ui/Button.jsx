@@ -23,7 +23,7 @@ const sizes = {
 const variations = {
   primary: css`
     color: var(--color-brand-50);
-    background-color: var(--color-brand-600);
+    background: var(--color-brand-600);
 
     &:hover {
       background-color: var(--color-brand-700);
@@ -56,7 +56,7 @@ export const Button = styled.button`
   ${(props) => variations[props.variation]}
 `;
 Button.defaultProps = {
-  variations: "primary",
-  size: "medium",
+  variation:'primary',
+  size: 'medium',
 };
 export default Button;
